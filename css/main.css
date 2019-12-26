@@ -3,17 +3,14 @@
     position: fixed;
     top: 0px;
     left: 0px;
-    background-color: #500000;
+    background-color: #4e4e4e;
     width: 100%;
-    padding: 0px;
-    margin-left: 0%;
     text-align: center;
 }
 
 #banner-content {
     color: #ffffff;
     display: inline;
-    margin-right: 0px;
 }
 
 #banner-content:hover {
@@ -23,7 +20,7 @@
 #bottom,
 #left,
 #right {
-    background: #500000;
+    background: #343434;
     position: fixed;
 }
 
@@ -57,8 +54,10 @@
 /*Entire page*******************/
 html {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    color: #ffffff;
     margin: auto;
     width: 80%;
+    background-color: #2c2c2c;
 }
 
 /*******************************/
@@ -66,7 +65,7 @@ html {
 /*Links************************/
 a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 a:hover {
