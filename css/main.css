@@ -52,3 +52,34 @@ ul.posts li {
     list-style: none;
 }
 */
+
+/*Entire page*******************/
+html {
+    font-family: 'courier';
+    margin: 50px auto;
+    width: 60%;
+}
+/*******************************/
+
+/*Links************************/
+a {
+    text-decoration: none;
+    color: #969696;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+/*******************************/
+
+
+/*Lists************************/
+nav ul {
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+/*******************************/
