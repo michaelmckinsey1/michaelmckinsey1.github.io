@@ -55,9 +55,9 @@ ul.posts li {
 
 /*Entire page*******************/
 html {
-    font-family: 'courier';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     margin: 50px auto;
-    width: 60%;
+    width: 80%;
 }
 /*******************************/
 
