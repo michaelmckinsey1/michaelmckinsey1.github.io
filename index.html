@@ -10,6 +10,7 @@
 <body>
 
     <div id="banner">
+        <!--
         <nav>
             <ul>
                 <li><a href="/">
@@ -20,6 +21,12 @@
                     </a></li>
             </ul>
         </nav>
+-->
+    </div>
+
+    <div id="banner-content">
+        <button onclick="Home()">Home</button>
+        <button onclick="Resume()">My Resume</button>
     </div>
 
     <h1>Hi there, I'm Michael McKinsey!</h1>
@@ -27,7 +34,7 @@
     <p>I am currently pursuing a Computer Science degree at Texas A&amp;M University, class of 2022. I am also working part time as a Student Security Analyst with the IT Security Operations team at Texas A&amp;M.</p>
 
     <h1>Links:</h1>
-    
+
     <footer>
         <nav>
             <ul>
@@ -38,6 +45,16 @@
     </footer>
 
 </body>
+
+<script>
+    function Home() {
+        window.location='/';
+    }
+    
+    function Resume() {
+        window.location='/resume/Resume.pdf';
+    }
+</script>
 
 <div id="left"></div>
 <div id="right"></div>
