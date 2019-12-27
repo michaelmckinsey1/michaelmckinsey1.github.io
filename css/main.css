@@ -19,13 +19,13 @@
     float: left;
     height: 48px;
     background: #4e4e4e;
-    color: #ffffff;
+    color: rgb(238,238,238,1);
 }
 
 #bottom,
 #left,
 #right {
-    background: #343434;
+    background: #000000;
     position: fixed;
 }
 
@@ -59,9 +59,9 @@
 /*Entire page*******************/
 html {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    color: #ffffff;
+    color: rgb(238,238,238,1);
     margin: auto;
-    background-color: #2c2c2c;
+    background-color: rgb(53,54,58);
 }
 
 /*******************************/
