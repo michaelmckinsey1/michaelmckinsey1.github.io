@@ -9,21 +9,39 @@
 }
 
 #banner-content {
-    top: 0%;
-    left: 45%;
+    top: 0px;
+    left: 0px;
     position: fixed;
+    display: inline-block;
 }
 
 #banner-button {
-    width: 100px;
     float: left;
-    height: 48px;
     background: #4e4e4e;
-    color: rgb(238,238,238,1);
+    color: rgb(238, 238, 238, 1);
+    border: none;
 }
 
 #banner-button:hover {
     opacity: 0.5;
+}
+
+.block {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid rgb(238, 238, 238, 1);
+    background-color: #4e4e4e;
+    color: rgb(238, 238, 238, 1);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    float: left;
+}
+
+.block:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 #bottom,
@@ -63,9 +81,9 @@
 /*Entire page*******************/
 html {
     font-family: 'Helvetica', 'Arial', 'Sans-Serif';
-    color: rgb(238,238,238,1);
+    color: rgb(238, 238, 238, 1);
     margin: auto;
-    background-color: rgb(53,54,58);
+    background-color: rgb(53, 54, 58);
 }
 
 /*******************************/
