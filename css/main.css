@@ -9,17 +9,17 @@
 }
 
 #banner-content {
-    top: 0px;
-    left: 0px;
-    height: 0px;
+    top: 0%;
+    left: 45%;
     position: fixed;
-    display: inline;
-    width: 100%;
-    text-align: center;
 }
 
 .banner-button {
     width: 100px;
+    float: left;
+    height: 48px;
+    background: #4e4e4e;
+    color: #ffffff;
 }
 
 #bottom,
