@@ -14,12 +14,16 @@
     position: fixed;
 }
 
-.banner-button {
+#banner-button {
     width: 100px;
     float: left;
     height: 48px;
     background: #4e4e4e;
     color: rgb(238,238,238,1);
+}
+
+#banner-button:hover {
+    opacity: 0.5;
 }
 
 #bottom,
