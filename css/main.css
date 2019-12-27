@@ -12,9 +12,9 @@
     top: 0px;
     left: 0px;
     position: fixed;
-    display: inline-block;
 }
 
+/*
 #banner-button {
     float: left;
     background: #4e4e4e;
@@ -25,6 +25,7 @@
 #banner-button:hover {
     opacity: 0.5;
 }
+*/
 
 .block {
     display: inline-block;
@@ -107,9 +108,7 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 30px;
-    margin-left: 30px;
+    display: inline-block;
 }
 
 /*******************************/
