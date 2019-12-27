@@ -3,31 +3,21 @@
 
 <head>
     <title>Michael McKinsey</title>
-    <!-- link to main stylesheet -->
     <link rel="stylesheet" href="/css/main.css">
 </head>
 
+<div id="banner"></div>
+
+<div id="banner-content">
+    <nav>
+        <ul>
+            <li><button class="banner-button" onclick="Home()">Home</button></li>
+            <li><button class="banner-button" onclick="Resume()">My Resume</button></li>
+        </ul>
+    </nav>
+</div>
+
 <body>
-
-    <div id="banner">
-        <!--
-        <nav>
-            <ul>
-                <li><a href="/">
-                        <div id="banner-content">Home</div>
-                    </a></li>
-                <li><a href="/resume/Resume.pdf">
-                        <div id="banner-content">My Resume</div>
-                    </a></li>
-            </ul>
-        </nav>
--->
-    </div>
-
-    <div id="banner-content">
-        <button onclick="Home()">Home</button>
-        <button onclick="Resume()">My Resume</button>
-    </div>
 
     <h1>Hi there, I'm Michael McKinsey!</h1>
 
@@ -48,11 +38,11 @@
 
 <script>
     function Home() {
-        window.location='/';
+        window.location = '/';
     }
-    
+
     function Resume() {
-        window.location='/resume/Resume.pdf';
+        window.location = '/resume/Resume.pdf';
     }
 </script>
 
