@@ -28,8 +28,8 @@
 */
 
 .inline-buttons {
-    display: inline-block;
     float: left;
+    width: 50vw;
 }
 
 .block {
