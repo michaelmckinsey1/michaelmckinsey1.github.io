@@ -14,22 +14,8 @@
     position: fixed;
 }
 
-/*
-#banner-button {
-    float: left;
-    background: #4e4e4e;
-    color: rgb(238, 238, 238, 1);
-    border: none;
-}
-
-#banner-button:hover {
-    opacity: 0.5;
-}
-*/
-
 .inline-buttons {
     float: left;
-    width: 50vw;
 }
 
 .block {
@@ -40,6 +26,7 @@
     font-size: 16px;
     cursor: pointer;
     text-align: center;
+    width: 50vw;
 }
 
 .block:hover {
