@@ -64,8 +64,10 @@
     function setWidth() {
         document.querySelector('button.block').style.width = getWidth() / 2 + 'px';
     }
-
-    setWidth();
+    
+    while (true) { //document is open.
+        setWidth();
+    }
 </script>
 
 <!--
