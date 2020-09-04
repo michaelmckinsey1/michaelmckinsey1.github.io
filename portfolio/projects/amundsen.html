@@ -5,10 +5,7 @@
     <title>The Amundsen Project</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="/css/flexslider.css">
--->
+
     <link rel="stylesheet" href="../../fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -16,58 +13,35 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 
-
-    <style>
-        .center {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            width: 1000px;
-            margin: 0px;
-        }
-
-        #image {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
-    </style>
-
 </head>
 
 <body>
-    <div class="center">
+    <div class="center-port">
         <h1>The Amundsen Project</h1>
     </div>
-    <div class="center">
-        <p>The primary focus of my 8-week stint with the Data Engineering team at RigUp for the summer of 2020 was a data catalog project. A data catalog is designed to organize large databases via a platform that is more human-friendly and searchable. A couple of years ago, the rideshare company Lyft set out to minimize the time people spent searching data by creating an open-source data cataloguing tool named Amundsen.</p>
+    <div class="center-port">
+        <p class ="p-port">The primary focus of my 8-week stint with the Data Engineering team at RigUp for the summer of 2020 was a data catalog project. A data catalog is designed to organize large databases via a platform that is more human-friendly and searchable. A couple of years ago, the rideshare company Lyft set out to minimize the time people spent searching data by creating an open-source data cataloguing tool named Amundsen.</p>
     </div>
-    <img id="image" src="../../images/amundsen_ui.png">
-    <div class="center">
-        <p>Amundsen’s tag and search bar-based system makes it extremely easy to search through various tables in a database. And the large swaths of metadata that is collected by Amundsen allows the tool to display very creative information: such as showing the most popular tables, usage statistics per table, and where a table was sourced or generated from.</p>
+    <img id="image-port" src="../../images/amundsen_ui.png">
+    <div class="center-port">
+        <p class ="p-port">Amundsen’s tag and search bar-based system makes it extremely easy to search through various tables in a database. And the large swaths of metadata that is collected by Amundsen allows the tool to display very creative information: such as showing the most popular tables, usage statistics per table, and where a table was sourced or generated from.</p>
     </div>
-    <div class="center">
-        <p>
+    <div class="center-port">
+        <p class ="p-port">
             I and another intern, with the support of the Data Engineering team, were tasked with implementing a version of Amundsen that could be used by RigUp personnel. Personnel which mainly consisted of business intelligence analysts, who were the target users for the tool. After using <a href="https://www.docker.com/" target="_blank">Docker</a> to quickly set up Amundsen’s five microservices on a GCP virtual machine, most of the initial work was focused on connecting the data pipeline from <a href="https://www.snowflake.com/" target="_blank">Snowflake</a> to Amundsen’s graph database, <a href="https://neo4j.com/" target="_blank">Neo4j</a>. This was done <i>almost</i> painlessly using pre-built connectors from Amundsen’s data builder library.
         </p>
     </div>
-    <div class="center">
-        <p>
+    <div class="center-port">
+        <p class ="p-port">
             A cool part of the project I got to handle was generating custom usage statistics from user data in Snowflake and ingesting those statistics into Amundsen. This was so that we could power the "popular table" and "usage data" features that I briefly mentioned earlier. The general solution was to take each user’s SQL queries and parse them for table names. From which the presence of an individual table name was counted as one read. Those reads were then aggregated to a dataframe and uploaded daily to a table in Snowflake that held all of the usage data. That table was then processed and read by Amundsen.
         </p>
     </div>
-    <div class="center">
-        <p>
+    <div class="center-port">
+        <p class ="p-port">
             Also, we got the opportunity to utilize tools like Apache Airflow, CircleCI, and GCP to make the development and deployment of Amundsen a lot more efficient. By the end of 8 weeks, RigUp's data catalog was ready to go and accessible internally.
         </p>
     </div>
-    <div class="center">
+    <div class="center-port">
         <a href="/index.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Back to Home</a>
     </div>
 
