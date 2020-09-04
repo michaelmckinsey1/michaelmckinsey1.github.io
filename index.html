@@ -1,61 +1,250 @@
 <!DOCTYPE html>
-<html>
-    
+<html lang="en">
+
 <head>
     <title>Michael McKinsey</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
 
-    <!--
-    <style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        button {
-            width: (getWidth() / 2)px;
-        }
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
 
-    </style>
--->
+    <link href="css/popup.css" rel="stylesheet">
+
+    <script defer src="js/popup.js"></script>
+
 </head>
 
-<!--<div id="banner"></div>-->
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
 
-<div id="banner-content">
-    <div class="inline-buttons"><button class="block" onclick="Home()">Home</button></div>
-    <div class="inline-buttons"><button class="block" onclick="Resume()">My Resume</button></div>
-</div>
 
-<body>
 
-    <h1>Hi there, I'm Michael McKinsey!</h1>
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
 
-    <p>I am currently pursuing a Computer Science degree at Texas A&amp;M University, class of 2022.</p>
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <h1>Links:</h1>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:michaelmckinsey1@gmail.com">MichaelMcKinsey1@gmail.com</a></li>
-                <li><a href="https://github.com/MichaelMcKinsey1">github.com/MichaelMcKinsey1</a></li>
-            </ul>
-        </nav>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#section-home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#section-resume">Resume</a></li>
+                    <!--                    <li class="nav-item"><a class="nav-link" href="#section-contact">Contact</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <section class="site-hero" style="background-image: url(images/image_1.JPG);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center pt-5">
+
+                    <h1 class="site-heading site-animate">Hello, I'm <strong class="d-block">Michael McKinsey</strong></h1>
+                    <!--					<strong class="d-block text-white text-uppercase letter-spacing">and this is My Rezume</strong>-->
+
+                </div>
+            </div>
+        </div>
+    </section> <!-- section -->
+
+
+
+    <section class="site-section" id="section-about">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+                    <img src="images/myself_2.JPG" alt="Image placeholder" class="img-fluid">
+                </div>
+                <div class="col-lg-5 pl-lg-5">
+                    <div class="section-heading">
+                        <h2>About <strong>Me</strong></h2>
+                    </div>
+                    <p class="lead">Currently pursuing a computer science degree at Texas A&amp;M University College Station, I am interested in software engineering related opportunities.</p>
+                    <p>Originally from Houston, I am no stranger to Texas. I love all Houston sports teams, but I am mainly absorbed playing/watching basketball. I love almost anything competitve, including competitive gaming. I have also been getting into running recently due to the lack of open basketball courts.</p>
+
+                    <!--
+                    <p>
+                        <a href="mailto:michaelmckinsey1@gmail.com" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Hire Me</a>
+                        <a href="/resume/Resume.pdf" target="_blank" class="btn btn-secondary px-4 py-2 btn-sm">Download Resume</a>
+                    </p>
+-->
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section class="site-section" id="section-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    <h2>Featured <strong>Portfolio</strong></h2>
+                </div>
+            </div>
+            <div class="filters">
+                <ul>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".projects">Projects</li>
+                    <li data-filter=".websites">Websites</li>
+                    <!--
+                    <li data-filter=".mockup">Mockup</li>
+                    <li data-filter=".typography">Typography</li>
+                    <li data-filter=".photography">Photography</li>
+-->
+                </ul>
+            </div>
+
+            <div class="filters-content">
+                <div class="row grid">
+                    <div class="single-portfolio col-sm-4 all projects">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="/portfolio/amundsen/index.html" target="_blank"><img class="image img-fluid" src="images/amundsen_upscaled.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>The Amundsen Project</h4>
+                            <p>Summer 2020</p>
+                            <a href="portfolio/projects/amundsen.html" target="_blank" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                            <!--
+                            <button class="btn btn-primary px-4 py-2 btn-sm" data-modal-target="#modal">Read More</button>
+                            <div class="modal" id="modal">
+                                <div class="modal-header">
+                                    <div class="title">Example Modal</div>
+                                    <button data-close-button class="close-button">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus, consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+                                </div>
+                            </div>
+                            <div id="overlay"></div>
+-->
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all projects">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="/portfolio/amundsen/index.html" target="_blank"><img class="image img-fluid" src="images/placeholder-image.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Geodisparate Report</h4>
+                            <p>Summer 2019</p>
+                            <a href="portfolio/projects/geodisparate.html" target="_blank" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all websites">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="/index.html" target="_blank"><img class="image img-fluid" src="images/personal_website.jpg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Personal Website</h4>
+                            <p>Fall 2020</p>
+                            <a href="portfolio/websites/personal_website.html" target="_blank" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .section -->
+
+
+    <section class="site-section " id="section-resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>My <strong>Resume</strong></h2>
+                    </div>
+                    <div class="center-qual">
+                        <p>My ideal job is to work for a company where Software Development is the main product. I want the development that I do to be high-value to not only the customers, but to the company as well. I am not particularly partial to a specific area of computer science. I really enjoyed the project I worked on last summer because it was challenging and fruitful, not necessarily because of the area it was in. I believe there are opportunities like this in every area, and so I don't want to limit myself to a single space.</p>
+                    </div>
+                    <div class="center-qual">
+                        <p>I am confident programming in C++ and Python, but I don't think there is any language that I can't/won't learn, even on the fly. I see languages as a means to an end: it's a matter of learning what you need to about a tool to accomplish your goal. I feel like I have the right amount of experience and coursework at this point to try and tackle any challenge, even if I need to work at it a little harder.</p>
+                    </div>
+                </div>
+
+                <!--Width and height values are hacked. Needs to be updated.-->
+                <embed src="resume/Resume.pdf" width="9999" height="1200" type="application/pdf">
+            </div>
+        </div>
+    </section> <!-- .section -->
+
+
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="row mb-5">
+                <p class="col-12 text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy; <script>
+                        document.write(new Date().getFullYear());
+
+                    </script> All rights reserved | <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+
+            <!--
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <a href="#" class="social-item"><span class="icon-facebook2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-twitter"></span></a>
+                        <a href="#" class="social-item"><span class="icon-instagram2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-linkedin2"></span></a>
+                        <a href="#" class="social-item"><span class="icon-vimeo"></span></a>
+                    </p>
+                </div>
+            </div>
+-->
+
+        </div>
     </footer>
+
+
+
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/vendor/jquery.easing.1.3.js"></script>
+
+    <script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+    <!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
 
 </body>
 
-<script>
-    function Home() {
-        window.location = '/';
-    }
-
-    function Resume() {
-        window.location = '/resume/Resume.pdf';
-    }
-</script>
-
-<!--
-<div id="left"></div>
-<div id="right"></div>
-<div id="bottom"></div>
--->
-
-<!----></html>
+</html>
