@@ -19,7 +19,20 @@
         <h1>Geodisparate Report</h1>
     </div>
     <div class="center-port">
-        <p><i>This page is under construction</i></p>
+        <p class="p-port">As part of my tenure with the Security Operations team at Texas A&amp;M, I got the opportunity to revamp an alert that had a very solid concept, but happened to be producing a lot of false positive events. It was named “Geo-disparate Alert”, and its overarching function was to identify if a Texas A&amp;M account had logged in from two separate geographical locations, over an impossible travel-time period.</p>
+    </div>
+    <img id="image-port" src="../../images/geodisparate_example.png">
+    <div class="center-port">
+        <p class="p-port">For example: if someone logged in to their account in College Station, Texas on September 3rd at 12:30pm, and then subsequently logged in to the same account in Jammu, India on September 3rd at 1:00pm, we would suspect that there must be a problem, since even a flight between these two locations would take at least 24 hours. Worst case scenario would be that a bad actor had access to a Texas A&amp;M account, which is definitely unacceptable.</p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">The alert would provide a list of accounts that had been detected logging in from geographically disparate locations over the past 24 hours in our ticketing system <a href="https://www.servicenow.com/" target="_blank">ServiceNow</a>, which would need to be manually triaged for false positives. And there were a lot of false positives. I had found that out of the 50-80 accounts that would be reported a day, on average 70-90% were false positives. This was mainly due to the inaccurate distance information that was being reported by <a href="https://www.splunk.com/" target="_blank">Splunk</a>, our SIEM platform that was being utilized to produce the alert. The other big issue was the use of VPN’s, which could appear to modify the user’s physical location.</p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">The resulting python code I developed aimed to solve the two above issues. It accomplished this firstly by utilizing <a href="https://ipinfo.io/" target="_blank">ipinfo</a>’s IP address database instead of Splunk’s, to retrieve more accurate location information. Those two locations and their corresponding times were then compared against an acceptable threshold to see if the login activity was feasible. After this, the remaining events were passed on to be checked against a manually maintained list of known VPNs, VPSs, and cloud service companies. After this point, the remaining events were sent off to ServiceNow to be manually triaged.</p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">During the testing phase of the project, I found that upwards of 80% of events were now being removed, all of which were correctly-identified false positives. This was a great success, as the automation of this spared human analysts from wasting a lot of time on unnecessary work.</p>
     </div>
     <div class="center-port">
         <a href="/index.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Back to Home</a>
