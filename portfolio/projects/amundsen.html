@@ -24,7 +24,7 @@
     </div>
     <img id="image-port" src="../../images/amundsen_ui.png">
     <div class="center-port">
-        <p class ="p-port">Amundsen’s tag and search bar-based system makes it extremely easy to search through various tables in a database. And the large swaths of metadata that is collected by Amundsen allows the tool to display very creative information: such as showing the most popular tables, usage statistics per table, and where a table was sourced or generated from.</p>
+        <p class ="p-port">Amundsen’s tag and search bar-based system makes it extremely easy to search through various tables in a database. Additionally, the large swaths of metadata that is collected by Amundsen allows the tool to display very creative information: such as showing the most popular tables, usage statistics per table, and where a table was sourced or generated from.</p>
     </div>
     <div class="center-port">
         <p class ="p-port">
@@ -33,7 +33,7 @@
     </div>
     <div class="center-port">
         <p class ="p-port">
-            A cool part of the project I got to handle was generating custom usage statistics from user data in Snowflake and ingesting those statistics into Amundsen. This was so that we could power the "popular table" and "usage data" features that I briefly mentioned earlier. The general solution was to take each user’s SQL queries and parse them for table names. From which the presence of an individual table name was counted as one read. Those reads were then aggregated to a dataframe and uploaded daily to a table in Snowflake that held all of the usage data. That table was then processed and read by Amundsen.
+            A cool part of the project that I got to handle was generating custom usage statistics from user data in Snowflake and ingesting those statistics into Amundsen. This was so that we could power the "popular table" and "usage data" features that I briefly mentioned earlier. The general solution was to take each user’s SQL queries and parse them for table names. From which the presence of an individual table name was counted as one read. Those reads were then aggregated to a dataframe and uploaded daily to a table in Snowflake that held all of the usage data. That table was then processed and read by Amundsen.
         </p>
     </div>
     <div class="center-port">
