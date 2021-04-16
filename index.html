@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script type='text/javascript'>
+    /**
+    * Script to refresh the page one time on load to temporarily fix bug with the portfolio section being displayed incorrectly.
+    */
+    (function() {
+        if (window.localStorage) {
+            if (!localStorage.getItem('firstLoad')) {
+                localStorage['firstLoad'] = true;
+                window.location.reload();
+            } else
+                localStorage.removeItem('firstLoad');
+        }
+    })();
+</script>
+
 <head>
     <title>Michael McKinsey</title>
     <meta charset="utf-8">
@@ -82,63 +97,63 @@
                 </div>
             </div>
 
-                <div class="row grid">
-                    <div class="single-portfolio col-sm-4 all projects">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <a href="portfolio/projects/amundsen.html"><img class="image img-fluid" src="images/amundsen_upscaled.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="p-inner">
-                            <h4>The Amundsen Project</h4>
-                            <p>Summer 2020</p>
-                            <a href="portfolio/projects/amundsen.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+            <div class="row grid">
+                <div class="single-portfolio col-sm-4 all projects">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <a href="portfolio/projects/amundsen.html"><img class="image img-fluid" src="images/amundsen_upscaled.jpg" alt=""></a>
                         </div>
                     </div>
-                    <div class="single-portfolio col-sm-4 all projects">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <a href="portfolio/projects/apollo.html"><img class="image img-fluid" src="images/apollo_frontpage.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="p-inner">
-                            <h4>Apollo</h4>
-                            <p>Fall 2021</p>
-                            <a href="portfolio/projects/apollo.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
-                        </div>
-                    </div>
-                    <div class="single-portfolio col-sm-4 all projects">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <a href="portfolio/projects/geodisparate.html"><img class="image img-fluid" src="images/geodisparate.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="p-inner">
-                            <h4>Geodisparate Report</h4>
-                            <p>Summer 2019</p>
-                            <a href="portfolio/projects/geodisparate.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
-                        </div>
+                    <div class="p-inner">
+                        <h4>The Amundsen Project</h4>
+                        <p>Summer 2020</p>
+                        <a href="portfolio/projects/amundsen.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
                     </div>
                 </div>
-                <div class="row grid">
-                    <div class="single-portfolio col-sm-4 all websites">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                <a href="portfolio/websites/personal_website/personal_website.html"><img class="image img-fluid" src="images/personal_website.jpg" alt=""></a>
-                            </div>
+                <div class="single-portfolio col-sm-4 all projects">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <a href="portfolio/projects/apollo.html"><img class="image img-fluid" src="images/apollo_frontpage.jpg" alt=""></a>
                         </div>
-                        <div class="p-inner">
-                            <h4>Personal Website</h4>
-                            <p>Fall 2020</p>
-                            <a href="portfolio/websites/personal_website/personal_website.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                    </div>
+                    <div class="p-inner">
+                        <h4>Apollo</h4>
+                        <p>Fall 2021</p>
+                        <a href="portfolio/projects/apollo.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                    </div>
+                </div>
+                <div class="single-portfolio col-sm-4 all projects">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <a href="portfolio/projects/geodisparate.html"><img class="image img-fluid" src="images/geodisparate.png" alt=""></a>
                         </div>
+                    </div>
+                    <div class="p-inner">
+                        <h4>Geodisparate Report</h4>
+                        <p>Summer 2019</p>
+                        <a href="portfolio/projects/geodisparate.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
                     </div>
                 </div>
             </div>
+            <div class="row grid">
+                <div class="single-portfolio col-sm-4 all websites">
+                    <div class="relative">
+                        <div class="thumb">
+                            <div class="overlay overlay-bg"></div>
+                            <a href="portfolio/websites/personal_website/personal_website.html"><img class="image img-fluid" src="images/personal_website.jpg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="p-inner">
+                        <h4>Personal Website</h4>
+                        <p>Fall 2020</p>
+                        <a href="portfolio/websites/personal_website/personal_website.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
