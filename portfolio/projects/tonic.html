@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Tonic Project</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="center-port">
+        <h1>The Tonic Project</h1>
+    </div>
+    <div class="center-port">
+        <p class ="p-port">My second summer internship at RigUp (now <a href="https://www.workrise.com/">Workrise</a>) was a 10-week stint on the Engineering Enablement team. My project this time was Data Improvement using <a href="https://www.tonic.ai/">Tonic</a> (I was the only intern assigned to the project, however, I received a major amount of help from my mentor, Bert, on the Enablement team).</p>
+    </div>
+    <div class="center-port">
+        <p class ="p-port">The problem: Current development environments did not have the necessary data to be able to thoroughly test developer's changes. <a href="https://www.tonic.ai/">Tonic</a> was able to solve the problem not only because it is able to provide data, but also because it generates data in a way that <a href="https://www.tonic.ai/blog/what-is-data-synthesis-and-why-are-we-calling-it-data-mimicking">mathematically guarantees security and utility</a>. And so, the goal of my work was to incorporate this tool into Workrise's infrastructure and eliminate any blockers that would keep developers from utilizing the new output data.</p>
+    </div>
+    <div class="center-port">
+        <p class ="p-port">We achieved this goal by first deploying the <a href="https://www.tonic.ai/">Tonic</a> application via Kubernetes (<a href="https://cloud.google.com/kubernetes-engine">GKE</a>) with <a href="https://helm.sh/">Helm</a>. The <a href="https://www.tonic.ai/">Tonic</a> workspace and subsequent resources were defined using <a href="https://www.terraform.io/">Terraform</a> which made it incredibly easy to connect existing <a href="https://www.postgresql.org/">Postgres</a> and <a href="https://www.mongodb.com/">MongoDB</a> databases after we created <a href="https://www.terraform.io/docs/language/modules/develop/index.html">Terraform modules</a> for each of them as well as a "Tonic" <a href="https://www.terraform.io/docs/language/providers/index.html">Terraform provider</a>. All of this resulted in the database-to-Tonic connection process only taking a few lines of <a href="https://www.terraform.io/docs/language/syntax/configuration.html">Terraform HCL</a> code through invocation of the respective modules.</p>
+    </div>
+    <img id="image-port" src="../../images/tonic_ui.png">
+    <div class="center-port">
+        <p class ="p-port">After the database was connected, as described above, we were able to choose generators within the <a href="https://www.tonic.ai/">Tonic</a> UI for columns that contained <a href="https://www.gsa.gov/reference/gsa-privacy-program/rules-and-policies-protecting-pii-privacy-act">PII</a>, <a href="https://oag.ca.gov/privacy/ccpa">PI</a>, or <a href="https://gdpr-info.eu/issues/personal-data/">PD</a>. It was essential to work with the database owners in this step to help identify which columns we wanted to mask. After the masking process was complete, a generation job could be started to perform the generations and write the data to the specified <a href="https://www.tonic.ai/">Tonic</a> output database. This is where the concern of how to consume the data could be addressed.</p>
+    </div>
+    <div class="center-port">
+        <p class ="p-port">The method we chose to distribute the <a href="https://www.tonic.ai/">Tonic</a> output databases was by containerizing each of them into <a href="https://docs.docker.com/engine/reference/commandline/images/">Docker images</a> that resided in <a href="https://cloud.google.com/artifact-registry">GCP Artifact Registry</a>. Thus by providing a <a href="https://docs.docker.com/compose/">docker-compose</a> file, developers were able to spin up production-like data on their local, thus achieving our goal. By the time my 10 weeks were up, several production databases had already been connected, and self-service documentation existed for developers to connect their own databases to <a href="https://www.tonic.ai/">Tonic</a>, in a few simple steps.</p>
+    </div>
+    <div class="center-port">
+        <a href="/index.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Back to Home</a>
+    </div>
+
+</body></html>
