@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Resume Matcher</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../../fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="center-port">
+        <h1>Resume Matcher</h1>
+    </div>
+    <div class="center-port">
+        <p class="p-port">For my senior capstone class, I was a part of a 4-person team which decided to make a product
+            that attempted to improve the job searching process. The "Resume Matcher" would take a resume, scan it, and compare the
+            details to jobs on platforms like <a href="https://www.linkedin.com/jobs/">Linkedin</a> or <a
+                href="https://www.indeed.com/">Indeed</a> and find the best matching jobs for that resume. There aren't
+            any tools on the market that provide this sort of automation, so this was an interesting product to explore.
+        </p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">There were multiple pieces that had to come together to make the matcher, and I was
+            responsible for the part that collected the job information from the internet. Web scraping is not
+            generalizable across different webpages, so I only ended up having time to develop the scraper specific to
+            the <a href="https://www.linkedin.com/jobs/">Linkedin</a> jobs page. At a high level, it was designed to
+            take any sort of parameters in regards to "job title" and "location" and from the resulting page go through
+            each
+            card and collect the data from it.
+        </p>
+    </div>
+    <div class="center-port">
+        <img id="image-port" src="../../images/resume_matcher_example.PNG">
+    </div>
+    <div class="center-port">
+        <p class="p-port">The speed of the scraper itself is an interesting problem on its own. Thousands of jobs are
+            uploaded to <a href="https://www.linkedin.com/jobs/">Linkedin</a> every hour, so ideally we would want the
+            scraper to keep up with this number or surpass it. Unfortunately due to various constraints, some outlined
+            in the report extract below, this speed is not feasible from one single scraper instance. This is because
+            one single scraper instance performs at best around 1000 jobs per hour (i7-12700k cpu). Again, there are
+            multiple reasons for this, but the main bottleneck is on the <a
+                href="https://www.linkedin.com/jobs/">Linkedin</a> side, where data requests quickly become throttled.
+            One idea to get around this that I had would be to utilize the built-in search parameters that <a
+                href="https://www.linkedin.com/jobs/">Linkedin</a> offers to run multiple scrapers at the same time for
+            different locations or different job catagories.
+        </p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">That idea was never implemented though and this project was discontinued after the semester
+            ended. If it was available it would be accessible at <a
+                href="http://resume-matcher-mvp.herokuapp.com/">http://resume-matcher-mvp.herokuapp.com/</a>. Despite
+            this, the web scraper itself can be ran as a stand-alone program and its source code is provided below.
+        </p>
+    </div>
+    <div class="center-port">
+        <p class="p-port">
+            <b>Product Demo</b>
+        </p>
+    </div>
+    <div class="center-port">
+        <video width="50%" height=400 controls><source src="../../videos/resume_matcher.mp4" allowfullscreen autostart="false" type="video/mp4"></video>
+    </div>
+    <div class="center-port">
+        <p class="p-port">
+            <b>Linkedin Web Scraper Full Implementation Details</b> - below are implementation details taken as an
+            extract from the
+            report for this project and the source code for the web scraper.
+        </p>
+    </div>
+    <div class="center-port">
+        <embed src="../../resources/resume_matcher/report_extract.pdf" width="50%" height="500" type="application/pdf">
+    </div>
+    <div class="center-port">
+        <embed src="../../resources/resume_matcher/main.py" width="50%" height="500">
+    </div>
+    <div class="center-port">
+        <a href="/index.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Back to Home</a>
+    </div>
+
+</body>
+
+</html>
