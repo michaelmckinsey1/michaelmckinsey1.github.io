@@ -70,7 +70,7 @@
 
 /*Entire page*******************/
 html {
-    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Helvetica", "Arial", "Sans-Serif";
     color: rgb(238, 238, 238, 1);
     margin: auto;
     background-color: rgb(53, 54, 58);
@@ -89,7 +89,6 @@ a:hover {
 }
 
 /*******************************/
-
 
 /*Lists************************/
 nav ul {

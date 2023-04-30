@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-    
-<head>
-    <title>Michael McKinsey</title>
-    <link rel="stylesheet" href="css/main.css">
+    <head>
+        <title>Michael McKinsey</title>
+        <link rel="stylesheet" href="css/main.css" />
 
-    <!--
+        <!--
     <style>
 
         button {
@@ -14,48 +13,62 @@
 
     </style>
 -->
-</head>
+    </head>
 
-<!--<div id="banner"></div>-->
+    <!--<div id="banner"></div>-->
 
-<div id="banner-content">
-    <div class="inline-buttons"><button class="block" onclick="Home()">Home</button></div>
-    <div class="inline-buttons"><button class="block" onclick="Resume()">My Resume</button></div>
-</div>
+    <div id="banner-content">
+        <div class="inline-buttons">
+            <button class="block" onclick="Home()">Home</button>
+        </div>
+        <div class="inline-buttons">
+            <button class="block" onclick="Resume()">My Resume</button>
+        </div>
+    </div>
 
-<body>
+    <body>
+        <h1>Hi there, I'm Michael McKinsey!</h1>
 
-    <h1>Hi there, I'm Michael McKinsey!</h1>
+        <p>
+            I am currently pursuing a Computer Science degree at Texas A&amp;M
+            University, class of 2022.
+        </p>
 
-    <p>I am currently pursuing a Computer Science degree at Texas A&amp;M University, class of 2022.</p>
+        <h1>Links:</h1>
 
-    <h1>Links:</h1>
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="mailto:michaelmckinsey1@gmail.com"
+                            >MichaelMcKinsey1@gmail.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://github.com/MichaelMcKinsey1"
+                            >github.com/MichaelMcKinsey1</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
 
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="mailto:michaelmckinsey1@gmail.com">MichaelMcKinsey1@gmail.com</a></li>
-                <li><a href="https://github.com/MichaelMcKinsey1">github.com/MichaelMcKinsey1</a></li>
-            </ul>
-        </nav>
-    </footer>
+    <script>
+        function Home() {
+            window.location = "";
+        }
 
-</body>
+        function Resume() {
+            window.location = "/resume/Resume.pdf";
+        }
+    </script>
 
-<script>
-    function Home() {
-        window.location = '';
-    }
-
-    function Resume() {
-        window.location = '/resume/Resume.pdf';
-    }
-</script>
-
-<!--
+    <!--
 <div id="left"></div>
 <div id="right"></div>
 <div id="bottom"></div>
 -->
 
-<!----></html>
+    <!---->
+</html>

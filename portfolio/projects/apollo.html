@@ -1,53 +1,110 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Apollo</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
 
-<head>
-    <title>Apollo</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../../fonts/icomoon/style.css" />
 
-    <link rel="stylesheet" href="../../fonts/icomoon/style.css">
+        <link rel="stylesheet" href="../../css/bootstrap.css" />
+        <link rel="stylesheet" href="../../css/style.css" />
 
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/style.css">
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700"
+            rel="stylesheet"
+        />
+    </head>
 
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
-
-</head>
-
-<body>
-    <div class="center-port">
-        <h1>Apollo</h1>
-    </div>
-    <div class="center-port">
-        <p class ="p-port">As a part of the curriculum for the Programming Studio course I took in the Fall of 2020, we were required to develop an application over a 6-week period that demonstrated a solution to a novel problem using several different APIs. My team of 5 members decided to create an application that, given a phrase in the English language, would generate a playlist based on the content of that phrase.</p>
-    </div>
-    <img id="image-port" src="../../images/apollo_main_content.png">
-    <div class="center-port">
-        <p class ="p-port">(Pictured above is an example use of Apollo with a test playlist name and phrase.)</p>
-    </div>
-    <div class="center-port">
-        <p class ="p-port">
-            To develop Apollo we used <a href="https://developer.spotify.com/documentation/web-api/">Spotify's Web API</a> to get songs, <a href="https://www.twinword.com/api/sentiment-analysis.php">Twinword's Sentiment Analysis API</a> to generate custom playlist images and <a href="https://cloud.google.com/text-to-speech">Google's Text-to-Speech API</a> for accessibility. The app itself was built on a Nodejs runtime environment.
-        </p>
-    </div>
-    <div class="center-port">
-        <p class ="p-port">
-            How it works is as follows: the user types in a name for their playlist and then enters a phrase. Upon hitting the generate button, the phrase would be parsed, and each word in the phrase would be represented as one song in the playlist. The sentiment for the phrase as a whole would determine the image selected for the playlist. Whether it is positive, negative, or neutral all provides a different image. Once the playlist is generated, a user can save the playlist to their Spotify account and play the songs within the application. The user also can share the playlist via several different options.
-        </p>
-    </div>
-    <div class="center-port">
-        <p class ="p-port">
-            Being on a 5-person team, my contributions were mostly focused on sentiment analysis, user actions, and hosting. Analyzing the sentiment of the phrase was as simple as passing the phrase to Twinword's API which sent back a sentiment score indicating if the phrase had a positive, negative, or neutral sentiment. Upon receiving the score, the playlist would be assigned an image that attempted to reflect the chosen sentiment. My contributions for user actions were focused on developing the process for which a user could share their generated playlist within Apollo. This was accomplished by generating an Apollo link that would fetch the generated playlist from Spotify and display it in Apollo. I was finally responsible for getting the application hosted, in which I used Heroku to host it for free.
-        </p>
-    </div>
-    <div class="center-port">
-        <p class ="p-port">
-            Most likely the application is not currently live, but if it is it can be found <a href="https://csce-proj3-group13-2020-apollo.herokuapp.com/">here</a>.
-        </p>
-    </div>
-    <div class="center-port">
-        <a href="/index.html" class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Back to Home</a>
-    </div>
-
-</body></html>
+    <body>
+        <div class="center-port">
+            <h1>Apollo</h1>
+        </div>
+        <div class="center-port">
+            <p class="p-port">
+                As a part of the curriculum for the Programming Studio course I
+                took in the Fall of 2020, we were required to develop an
+                application over a 6-week period that demonstrated a solution to
+                a novel problem using several different APIs. My team of 5
+                members decided to create an application that, given a phrase in
+                the English language, would generate a playlist based on the
+                content of that phrase.
+            </p>
+        </div>
+        <img id="image-port" src="../../images/apollo_main_content.png" />
+        <div class="center-port">
+            <p class="p-port">
+                (Pictured above is an example use of Apollo with a test playlist
+                name and phrase.)
+            </p>
+        </div>
+        <div class="center-port">
+            <p class="p-port">
+                To develop Apollo we used
+                <a href="https://developer.spotify.com/documentation/web-api/"
+                    >Spotify's Web API</a
+                >
+                to get songs,
+                <a href="https://www.twinword.com/api/sentiment-analysis.php"
+                    >Twinword's Sentiment Analysis API</a
+                >
+                to generate custom playlist images and
+                <a href="https://cloud.google.com/text-to-speech"
+                    >Google's Text-to-Speech API</a
+                >
+                for accessibility. The app itself was built on a Nodejs runtime
+                environment.
+            </p>
+        </div>
+        <div class="center-port">
+            <p class="p-port">
+                How it works is as follows: the user types in a name for their
+                playlist and then enters a phrase. Upon hitting the generate
+                button, the phrase would be parsed, and each word in the phrase
+                would be represented as one song in the playlist. The sentiment
+                for the phrase as a whole would determine the image selected for
+                the playlist. Whether it is positive, negative, or neutral all
+                provides a different image. Once the playlist is generated, a
+                user can save the playlist to their Spotify account and play the
+                songs within the application. The user also can share the
+                playlist via several different options.
+            </p>
+        </div>
+        <div class="center-port">
+            <p class="p-port">
+                Being on a 5-person team, my contributions were mostly focused
+                on sentiment analysis, user actions, and hosting. Analyzing the
+                sentiment of the phrase was as simple as passing the phrase to
+                Twinword's API which sent back a sentiment score indicating if
+                the phrase had a positive, negative, or neutral sentiment. Upon
+                receiving the score, the playlist would be assigned an image
+                that attempted to reflect the chosen sentiment. My contributions
+                for user actions were focused on developing the process for
+                which a user could share their generated playlist within Apollo.
+                This was accomplished by generating an Apollo link that would
+                fetch the generated playlist from Spotify and display it in
+                Apollo. I was finally responsible for getting the application
+                hosted, in which I used Heroku to host it for free.
+            </p>
+        </div>
+        <div class="center-port">
+            <p class="p-port">
+                Most likely the application is not currently live, but if it is
+                it can be found
+                <a href="https://csce-proj3-group13-2020-apollo.herokuapp.com/"
+                    >here</a
+                >.
+            </p>
+        </div>
+        <div class="center-port">
+            <a
+                href="/index.html"
+                class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
+                >Back to Home</a
+            >
+        </div>
+    </body>
+</html>
