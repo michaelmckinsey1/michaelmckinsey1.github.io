@@ -1,448 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="text/javascript">
-        /**
-         * Script to refresh the page one time on load to temporarily fix bug with the portfolio section being displayed incorrectly in Chrome.
-         */
-        (function () {
-            if (window.localStorage) {
-                if (!localStorage.getItem("firstLoad")) {
-                    localStorage["firstLoad"] = true;
-                    window.location.reload();
-                } else localStorage.removeItem("firstLoad");
-            }
-        })();
-    </script>
+<script type="text/javascript">
+    /**
+     * Script to refresh the page one time on load to temporarily fix bug with the portfolio section being displayed incorrectly in Chrome.
+     */
+    (function () {
+        if (window.localStorage) {
+            if (!localStorage.getItem("firstLoad")) {
+                localStorage["firstLoad"] = true;
+                window.location.reload();
+            } else localStorage.removeItem("firstLoad");
+        }
+    })();
+</script>
 
-    <head>
-        <title>Michael McKinsey</title>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        />
-        <link rel="stylesheet" href="css/animate.css" />
-        <link rel="stylesheet" href="css/flexslider.css" />
-        <link rel="stylesheet" href="fonts/icomoon/style.css" />
+<head>
+    <title>Michael McKinsey</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
 
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700"
-            rel="stylesheet"
-        />
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet" />
+</head>
 
-    <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-        <nav
-            class="navbar navbar-expand-lg site-navbar navbar-light bg-light"
-            id="pb-navbar"
-        >
-            <div class="container">
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarsExample09"
-                    aria-controls="navbarsExample09"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div
-                    class="collapse navbar-collapse justify-content-md-center"
-                    id="navbarsExample09"
-                >
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-portfolio"
-                                >Portfolio</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-works">Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-events"
-                                >Events</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#section-resume"
-                                >Resume</a
-                            >
-                        </li>
-                    </ul>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-resume">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="site-hero" style="background-image: url(images/image_1.JPG)" id="section-home"
+        data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center pt-5">
+                    <h1 class="site-heading site-animate">
+                        Hello, I'm
+                        <strong class="d-block">Michael McKinsey</strong>
+                    </h1>
                 </div>
             </div>
-        </nav>
+        </div>
+    </section>
 
-        <section
-            class="site-hero"
-            style="background-image: url(images/image_1.JPG)"
-            id="section-home"
-            data-stellar-background-ratio="0.5"
-        >
-            <div class="container">
-                <div
-                    class="row intro-text align-items-center justify-content-center"
-                >
-                    <div class="col-md-10 text-center pt-5">
-                        <h1 class="site-heading site-animate">
-                            Hello, I'm
-                            <strong class="d-block">Michael McKinsey</strong>
-                        </h1>
-                    </div>
+    <section class="site-section" id="section-about">
+        <div class="container">
+            <div class="row mb-5 align-items-center">
+                <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
+                    <img src="images/myself_2.JPG" alt="Image placeholder" class="img-fluid" />
                 </div>
-            </div>
-        </section>
-
-        <section class="site-section" id="section-about">
-            <div class="container">
-                <div class="row mb-5 align-items-center">
-                    <div class="col-lg-7 pr-lg-5 mb-5 mb-lg-0">
-                        <img
-                            src="images/myself_2.JPG"
-                            alt="Image placeholder"
-                            class="img-fluid"
-                        />
+                <div class="col-lg-5 pl-lg-5">
+                    <div class="section-heading">
+                        <h2>About <strong>Me</strong></h2>
                     </div>
-                    <div class="col-lg-5 pl-lg-5">
-                        <div class="section-heading">
-                            <h2>About <strong>Me</strong></h2>
-                        </div>
-                        <p class="lead">
-                            Pursuing a M.S. in Computer Science at Texas
-                            A&amp;M, I am interested in research opportunities.
-                        </p>
-                        <p>
-                            I am a Texas native from Houston and I have been
-                            located in College Station since 2018. I love all
-                            Houston sports, especially watching/playing
-                            basketball. Enjoying the competitiveness of
-                            basketball, I also enjoy e-sports and playing PC
-                            games.
-                        </p>
-                        <p>
-                            I've been studying Computer Science since high
-                            school and I have also worked several
-                            jobs/internships. Most recently I have been on the
-                            research side of things, and I enjoy the autonomy to
-                            explore topics at a low level. I am interested in
-                            the areas of high-performance computing and machine
-                            learning.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="site-section" id="section-portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="section-heading text-center col-md-12">
-                        <h2>Featured <strong>Portfolio</strong></h2>
-                    </div>
-                </div>
-
-                <div class="filters">
-                    <ul>
-                        <li class="active" data-filter="*">All</li>
-                        <li data-filter=".research">Research</li>
-                        <li data-filter=".industry">Industry</li>
-                        <li data-filter=".academic">Academic</li>
-                        <li data-filter=".personal">Personal</li>
-                    </ul>
-                </div>
-
-                <div class="filters-content">
-                    <div class="row grid">
-                        <div class="single-portfolio col-sm-4 all academic">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a
-                                        href="portfolio/projects/stable_diffusion_api.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/stable-diffusion.png"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Stable Diffusion API</h4>
-                                <p>Spring 2023</p>
-                                <a
-                                    href="portfolio/projects/stable_diffusion_api.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all research">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a href="portfolio/projects/LLNL.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/LLNL_logo.jpg"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>LLNL</h4>
-                                <p>Spring 2022 - Current</p>
-                                <a
-                                    href="portfolio/projects/LLNL.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all academic">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a
-                                        href="portfolio/projects/resume_matcher.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/resume_matcher_logo.png"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Resume Matcher</h4>
-                                <p>Spring 2022</p>
-                                <a
-                                    href="portfolio/projects/resume_matcher.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all industry">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a href="portfolio/projects/tonic.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/tonic_logo.png"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Tonic Project</h4>
-                                <p>Summer 2021</p>
-                                <a
-                                    href="portfolio/projects/tonic.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all industry">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a href="portfolio/projects/amundsen.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/amundsen_upscaled.jpg"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Amundsen Project</h4>
-                                <p>Summer 2020</p>
-                                <a
-                                    href="portfolio/projects/amundsen.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all academic">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a href="portfolio/projects/apollo.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/apollo_frontpage.jpg"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Apollo</h4>
-                                <p>Fall 2020</p>
-                                <a
-                                    href="portfolio/projects/apollo.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all industry">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a
-                                        href="portfolio/projects/geodisparate.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/geodisparate.png"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Geodisparate Report</h4>
-                                <p>Summer 2019</p>
-                                <a
-                                    href="portfolio/projects/geodisparate.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                        <div class="single-portfolio col-sm-4 all personal">
-                            <div class="relative">
-                                <div class="thumb">
-                                    <div class="overlay overlay-bg"></div>
-                                    <a
-                                        href="portfolio/websites/personal_website/personal_website.html"
-                                        ><img
-                                            class="image img-fluid"
-                                            src="images/personal_website.jpg"
-                                            alt=""
-                                    /></a>
-                                </div>
-                            </div>
-                            <div class="p-inner">
-                                <h4>Personal Website</h4>
-                                <p>Current</p>
-                                <a
-                                    href="portfolio/websites/personal_website/personal_website.html"
-                                    class="btn btn-primary px-4 py-2 btn-sm smoothscroll"
-                                    >Read More</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="site-section" id="section-works">
-            <div class="container">
-                <div class="row">
-                    <div class="section-heading text-center col-md-12">
-                        <h2><strong>Works</strong></h2>
-                    </div>
-                    <ul>
-                        <li>
-                            (August 2023) <a href="https://dl.acm.org/doi/abs/10.1145/3588195.3592989">Stephanie Brink, Michael McKinsey, David Boehme, Connor Scully-Allison, Ian Lumsden, Daryl Hawkins, Treece Burgess, Vanessa Lama, Jakob Lüttgau, Katherine E. Isaacs, Michela Taufer, and Olga Pearce. 2023. Thicket: Seeing the Performance Experiment Forest for the Individual Run Trees. In Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed Computing (HPDC '23). Association for Computing Machinery, New York, NY, USA, 281–293. https://doi.org/10.1145/3588195.3592989</a>
-                        </li>
-                        <li>
-                            (April 2023)
-                            <a href="resources/works/survey_paper.pdf"
-                                >ChatGPT, GPTs, and LLMs Survey Paper</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="site-section" id="section-events">
-            <div class="container">
-                <div class="row">
-                    <div class="section-heading text-center col-md-12">
-                        <h2><strong>Events</strong></h2>
-                    </div>
-                    <ul>
-                        <li>
-                            (November 2022)
-                            <a href="https://sc22.supercomputing.org/"
-                                >Attended SC22 Dallas Conference as a Student
-                                Volunteer</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="site-section" id="section-resume">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 mb-5">
-                        <div class="section-heading text-center">
-                            <h2>My <strong>Resume</strong></h2>
-                        </div>
-                    </div>
-                    <embed
-                        src="resume/Resume.pdf"
-                        width="1920"
-                        height="1100"
-                        type="application/pdf"
-                    />
-                </div>
-            </div>
-        </section>
-
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row mb-5">
-                    <p class="col-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>
-                            document.write(new Date().getFullYear());
-                        </script>
-                        All rights reserved |
-                        <a
-                            href="https://colorlib.com"
-                            target="_blank"
-                            class="text-primary"
-                            >Colorlib</a
-                        >
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    <p class="lead">
+                        Pursuing a M.S. in Computer Science at Texas
+                        A&amp;M, I am interested in research opportunities.
+                    </p>
+                    <p>
+                        I am a Texas native from Houston and I have been
+                        located in College Station since 2018. I love all
+                        Houston sports, especially watching/playing
+                        basketball. Enjoying the competitiveness of
+                        basketball, I also enjoy e-sports and playing PC
+                        games.
+                    </p>
+                    <p>
+                        I've been studying Computer Science since high
+                        school and I have also worked several
+                        jobs/internships. Most recently I have been on the
+                        research side of things, and I enjoy the autonomy to
+                        explore topics at a low level. I am interested in
+                        the areas of high-performance computing and machine
+                        learning.
                     </p>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-        <script src="js/vendor/jquery.min.js"></script>
-        <script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/vendor/popper.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+    <section class="site-section" id="section-portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    <h2>Featured <strong>Portfolio</strong></h2>
+                </div>
+            </div>
 
-        <script src="js/vendor/jquery.easing.1.3.js"></script>
+            <div class="filters">
+                <ul>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".research">Research</li>
+                    <li data-filter=".industry">Industry</li>
+                    <li data-filter=".academic">Academic</li>
+                    <li data-filter=".personal">Personal</li>
+                </ul>
+            </div>
 
-        <script src="js/vendor/jquery.stellar.min.js"></script>
-        <script src="js/vendor/jquery.waypoints.min.js"></script>
+            <div class="filters-content">
+                <div class="row grid">
+                    <div class="single-portfolio col-sm-4 all academic">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/stable_diffusion_api.html"><img class="image img-fluid"
+                                        src="images/stable-diffusion.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Stable Diffusion API</h4>
+                            <p>Spring 2023</p>
+                            <a href="portfolio/projects/stable_diffusion_api.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all research">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/LLNL.html"><img class="image img-fluid"
+                                        src="images/LLNL_logo.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>LLNL</h4>
+                            <p>Spring 2022 - Current</p>
+                            <a href="portfolio/projects/LLNL.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all academic">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/resume_matcher.html"><img class="image img-fluid"
+                                        src="images/resume_matcher_logo.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Resume Matcher</h4>
+                            <p>Spring 2022</p>
+                            <a href="portfolio/projects/resume_matcher.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all industry">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/tonic.html"><img class="image img-fluid"
+                                        src="images/tonic_logo.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Tonic Project</h4>
+                            <p>Summer 2021</p>
+                            <a href="portfolio/projects/tonic.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all industry">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/amundsen.html"><img class="image img-fluid"
+                                        src="images/amundsen_upscaled.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Amundsen Project</h4>
+                            <p>Summer 2020</p>
+                            <a href="portfolio/projects/amundsen.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all academic">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/apollo.html"><img class="image img-fluid"
+                                        src="images/apollo_frontpage.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Apollo</h4>
+                            <p>Fall 2020</p>
+                            <a href="portfolio/projects/apollo.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all industry">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/projects/geodisparate.html"><img class="image img-fluid"
+                                        src="images/geodisparate.png" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Geodisparate Report</h4>
+                            <p>Summer 2019</p>
+                            <a href="portfolio/projects/geodisparate.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                    <div class="single-portfolio col-sm-4 all personal">
+                        <div class="relative">
+                            <div class="thumb">
+                                <div class="overlay overlay-bg"></div>
+                                <a href="portfolio/websites/personal_website/personal_website.html"><img
+                                        class="image img-fluid" src="images/personal_website.jpg" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="p-inner">
+                            <h4>Personal Website</h4>
+                            <p>Current</p>
+                            <a href="portfolio/websites/personal_website/personal_website.html"
+                                class="btn btn-primary px-4 py-2 btn-sm smoothscroll">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
+    <section class="site-section" id="section-works">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    <h2><strong>Works</strong></h2>
+                </div>
+                <ul>
+                    <li>
+                        (August 2023) <a href="https://dl.acm.org/doi/abs/10.1145/3588195.3592989">Stephanie Brink,
+                            Michael McKinsey, David Boehme, Connor Scully-Allison, Ian Lumsden, Daryl Hawkins, Treece
+                            Burgess, Vanessa Lama, Jakob Lüttgau, Katherine E. Isaacs, Michela Taufer, and Olga Pearce.
+                            2023. Thicket: Seeing the Performance Experiment Forest for the Individual Run Trees. In
+                            Proceedings of the 32nd International Symposium on High-Performance Parallel and Distributed
+                            Computing (HPDC '23). Association for Computing Machinery, New York, NY, USA, 281–293.
+                            https://doi.org/10.1145/3588195.3592989</a>
+                    </li>
+                    <li>
+                        (April 2023)
+                        <a href="resources/works/survey_paper.pdf">ChatGPT, GPTs, and LLMs Survey Paper</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section" id="section-events">
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    <h2><strong>Events</strong></h2>
+                </div>
+                <ul>
+                    <li>
+                        (November 2022)
+                        <a href="https://sc22.supercomputing.org/">Attended SC22 Dallas Conference as a Student
+                            Volunteer</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="site-section" id="section-resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>My <strong>Resume</strong></h2>
+                    </div>
+                </div>
+                <embed src="resume/Resume.pdf" width="1920" height="1100" type="application/pdf" />
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <p class="col-12 text-center">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    All rights reserved |
+                    <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/vendor/popper.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/vendor/jquery.easing.1.3.js"></script>
+
+    <script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/jquery.waypoints.min.js"></script>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
 </html>
