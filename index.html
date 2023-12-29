@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<script type="text/javascript">
-    /**
-     * Script to refresh the page one time on load to temporarily fix bug with the portfolio section being displayed incorrectly in Chrome.
-     */
-    (function () {
-        if (window.localStorage) {
-            if (!localStorage.getItem("firstLoad")) {
-                localStorage["firstLoad"] = true;
-                window.location.reload();
-            } else localStorage.removeItem("firstLoad");
-        }
-    })();
-</script>
 
 <head>
     <title>Michael McKinsey</title>
@@ -356,6 +343,22 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     <script src="js/custom.js"></script>
+    <script type="text/javascript">
+        /**
+         * Script to refresh the page one time on load to temporarily fix bug with the portfolio section being displayed incorrectly in Chrome.
+         */
+        function reload() {
+            if (window.localStorage) {
+                if (!localStorage.getItem("firstLoad")) {
+                    localStorage["firstLoad"] = true;
+                    window.location.reload();
+                } else {
+                    localStorage.removeItem("firstLoad");
+                }
+            }
+        }
+        window.onload = reload();
+    </script>
 </body>
 
 </html>
